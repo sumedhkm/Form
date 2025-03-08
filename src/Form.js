@@ -1,6 +1,7 @@
 import React from "react";
 import "./Form.css"; 
-import downloadIcon from "./download.png"; // Update the path if needed
+import closeIcon from "./download.png";
+
 
 const Form = () => {
   return (
@@ -10,26 +11,36 @@ const Form = () => {
           <h2>Add Lead</h2>
         </div>
         <div className="close-icon">
-          <img src={downloadIcon} alt="Close" />
+        <img src={closeIcon} alt="Close Icon" />
         </div>
       </div>
 
       <div className="box">
         <form>
-          <label>Name:</label>
-          <input type="text" placeholder="Enter the Name" />
+          <div className="form-group">
+            <label>Name:</label>
+            <input type="text" />
+          </div>
 
-          <label>Mobile:</label>
-          <input type="text" placeholder="Enter the Mobile" />
+          <div className="form-group">
+            <label>Mobile:</label>
+            <input type="text" />
+          </div>
 
-          <label>Email id:</label>
-          <input type="email" placeholder="Enter the Email" />
+          <div className="form-group">
+            <label>Email ID:</label>
+            <input type="email"  />
+          </div>
 
-          <label>Source:</label>
-          <input type="text" placeholder="Enter the Source" />
+          <div className="form-group">
+            <label>Source:</label>
+            <input type="text"  />
+          </div>
 
-          <label>Date:</label>
-          <input type="text" placeholder="Enter the date" />
+          <div className="form-group">
+            <label>Date:</label>
+            <input type="text" />
+          </div>
 
           <div className="button-group">
             <button type="reset" className="cancel-btn">Cancel</button>

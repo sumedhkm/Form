@@ -17,18 +17,16 @@
 .icon-title {
     display: flex;
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
 }
 
 .download-icon {
-    width: 24px; 
+    width: 24px;
     height: 24px;
 }
 
 .close-icon {
     cursor: pointer;
-    margin-right: 10px;
-    font-weight: bold;
 }
 
 .close-icon img {
@@ -36,8 +34,10 @@
     height: 24px;
 }
 
+
+
 h2 {
-    color: yellow;
+
     margin-bottom: 15px;
 }
 
@@ -51,18 +51,20 @@ form {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
 }
 
 label {
-    flex: 1; 
+    flex: 1;
     text-align: left;
     font-weight: bold;
+    min-width: 120px;
 }
 
 input {
     flex: 2;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid whitesmoke;
     border-radius: 5px;
     width: 100%;
 }
