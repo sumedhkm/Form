@@ -4,10 +4,10 @@ import Form from "./Form";
 const App = () => {
   const [formData, setFormData] = useState({
     name: { label: "Full Name", type: "text", value: "" },
-    mobile: { label: "Mobile Number", type: "tel", value: ""},
+    mobile: { label: "Mobile Number", type: "number", value: ""},
     email: { label: "Email Address", type: "email", value: "" },
     source: { label: " Source", type: "text", value: "" },
-    date: { label: " Date", type: "date", value: "" },
+    date: { label: " Date", type: "text", value: "" },
   });
 
   const handleChange = (key, value) => {
